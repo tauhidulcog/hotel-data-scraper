@@ -152,7 +152,7 @@ def parse_review_data(review):
 
 if __name__ == "__main__":
     with DriverManager() as driver:
-        hotel_url = 'UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU'
+        hotel_url = 'https://www.expedia.com/Houston-Hotels-Homewood-Suites-By-Hilton-Houston-Kingwood-Parc-Airport-Area.h596821.Hotel-Information'
         property_id = hotel_url.split('.h')[1].split('.')[0]
         driver.get(hotel_url)
         page_index = -1
@@ -233,5 +233,5 @@ if __name__ == "__main__":
             sleep(random.uniform(5, 15))
 
         df = pd.DataFrame(review_data)
-        df.to_csv('./files/stonebridge/DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD_expedia_reviews.csv', index=False)
-        print(f"Saved {len(review_data)} reviews to ./files/stonebridge/DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD_expedia_reviews.csv")
+        df.to_csv('./files/stonebridge/15b5eabc-3c8f-41dd-9e4d-2043beffa097_expedia_reviews.csv', index=False)
+        print(f"Saved {len(review_data)} reviews to ./files/stonebridge/15b5eabc-3c8f-41dd-9e4d-2043beffa097_expedia_reviews.csv")
