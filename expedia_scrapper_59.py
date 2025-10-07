@@ -152,7 +152,7 @@ def parse_review_data(review):
 
 if __name__ == "__main__":
     with DriverManager() as driver:
-        hotel_url = 'UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU'
+        hotel_url = 'https://www.expedia.com/Denver-Hotels-Hyatt-Place-DenverWestminster.h20232253.Hotel-Information'
         property_id = hotel_url.split('.h')[1].split('.')[0]
         driver.get(hotel_url)
         page_index = -1

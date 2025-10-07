@@ -152,7 +152,7 @@ def parse_review_data(review):
 
 if __name__ == "__main__":
     with DriverManager() as driver:
-        hotel_url = 'UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU'
+        hotel_url = 'https://www.expedia.com/New-York-Hotels-Home2-Suites-By-Hilton-New-York-Times-Square.h91827909.Hotel-Information'
         property_id = hotel_url.split('.h')[1].split('.')[0]
         driver.get(hotel_url)
         page_index = -1
