@@ -233,5 +233,5 @@ if __name__ == "__main__":
             sleep(random.uniform(5, 15))
 
         df = pd.DataFrame(review_data)
-        df.to_csv('./files/stonebridge/DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD_expedia_reviews.csv', index=False)
-        print(f"Saved {len(review_data)} reviews to ./files/stonebridge/DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD_expedia_reviews.csv")
+        df.to_csv('./files/stonebridge/faf00240-9e26-4c5d-b74f-4d93b692335b_expedia_reviews.csv', index=False)
+        print(f"Saved {len(review_data)} reviews to ./files/stonebridge/faf00240-9e26-4c5d-b74f-4d93b692335b_expedia_reviews.csv")
