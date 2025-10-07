@@ -152,7 +152,7 @@ def parse_review_data(review):
 
 if __name__ == "__main__":
     with DriverManager() as driver:
-        hotel_url = 'https://www.expedia.com/Denver-Hotels-The-Jacquard.h22278411.Hotel-Information'
+        hotel_url = 'https://www.expedia.com/New-York-Hotels-Sheraton-Brooklyn-New-York-Hotel.h3360610.Hotel-Information'
         property_id = hotel_url.split('.h')[1].split('.')[0]
         driver.get(hotel_url)
         page_index = -1
@@ -233,5 +233,5 @@ if __name__ == "__main__":
             sleep(random.uniform(5, 15))
 
         df = pd.DataFrame(review_data)
-        df.to_csv('./files/stonebridge/004d977f-7d47-44b5-bcc9-9a17e79029f9_expedia_reviews.csv', index=False)
-        print(f"Saved {len(review_data)} reviews to ./files/stonebridge/004d977f-7d47-44b5-bcc9-9a17e79029f9_expedia_reviews.csv")
+        df.to_csv('./files/stonebridge/c2bbe1b4-9390-48bf-82a6-6bb599a09ff5_expedia_reviews.csv', index=False)
+        print(f"Saved {len(review_data)} reviews to ./files/stonebridge/c2bbe1b4-9390-48bf-82a6-6bb599a09ff5_expedia_reviews.csv")
